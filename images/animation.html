@@ -1,0 +1,70 @@
+<!-- // animations -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframe and animations</title>
+</head>
+<style>
+    .container{
+        background-color: greenyellow;
+    }
+    .box{
+        background-color: green;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        /* position relative taaki mein ise move kar sakoon */
+        animation-name: darsh9;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        /* mein uppar infinite bhi kar akta hoon */
+        /* animation delay mtlb itni der baad chalu hoga animation */
+        /* animation-direction: ; */
+        /* using this property you can do shorthand
+        animation: darsh 5s ease-in 1s 12 backwards; */
+    }
+
+    @keyframes darsh9{
+        0%{
+            top: 0px;
+            left: 0px;
+        }
+        25%{
+            top: 250px;
+            left: 0px;
+        }
+        75%{
+            top: 250px;
+            left: 250px;
+        }
+        100%{
+            top: 0px;
+            left: 250px;
+        }
+    }
+
+    @keyframes darsh99{
+        from{
+            width: 200px;
+
+        }
+        to{
+            width: 400px;
+
+        }
+
+    }
+
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+        <!-- <img src="https://scontent.fixc2-2.fna.fbcdn.net/v/t39.30808-6/240600459_2663082350513670_4514092995428174411_n.jpg?stp=cp0_dst-jpg_e15_p320x320_q65&_nc_cat=111&ccb=1-7&_nc_sid=8024bb&_nc_ohc=4zM-NDiB4pQAX8LgwNf&_nc_ht=scontent.fixc2-2.fna&oh=00_AfDs2r75E_qATDAGnCmUs_onPNXRCSzVUCHrxb4EQoSI-w&oe=64433DEB" alt=""> -->
+    </div>
+</body>
+</html>
